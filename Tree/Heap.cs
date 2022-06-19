@@ -5,12 +5,14 @@ namespace Data_structures_and_algorithm.Tree
     /*
 The heap is filled from left to right,  the children of the root must all be less than or equal to the root
 a heap is a complete binary tree that satisfies the heap property.
-all the root note must be filed from the left , the last right may not be filled but all other from the left must be filled.
+every level in a heap must be completely filled except potentially the the last level
 applications of heaps
 1. sorting (heap sort)
 2. heaps can be used in a graph algorithm. (shortest path)
 3. heaps are also used to implement priority queus.
 
+the height of a tree is Ologn
+in heap we can only remove the root node.
 we usually use an array to implement a heap even though a heap is a binary tree, they do not have hole in them, so it is effiient to use an array to implement them
 
 	we can store the nodes in an array,

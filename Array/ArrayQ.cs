@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data_structures_and_algorithm.Sorting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,8 @@ namespace Data_structures_and_algorithm.Array
     {
         public static int[] FindSumBySortingArray(int[] arr, int value)
         {
-            var QuickSort = new QuickSort();
-            QuickSort.Sort(arr, 0, arr.Length - 1);
+            var quickSort = new QuickSort();
+            quickSort.Sort(arr, 0, arr.Length - 1);
 
             var pointerOne = 0;
 
@@ -57,7 +58,7 @@ namespace Data_structures_and_algorithm.Array
                 }
             }
 
-            return Array.Empty<int>();
+            return new int[arr.Length];
         }
 
         public static int Fib(int n)
